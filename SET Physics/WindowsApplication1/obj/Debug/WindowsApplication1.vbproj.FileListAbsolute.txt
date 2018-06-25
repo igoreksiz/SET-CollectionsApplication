@@ -1,0 +1,10 @@
+G:\Projects\Project\SET Physics\WindowsApplication1\bin\Debug\SET 2014 Physics.exe.config
+G:\Projects\Project\SET Physics\WindowsApplication1\bin\Debug\SET 2014 Physics.exe
+G:\Projects\Project\SET Physics\WindowsApplication1\bin\Debug\SET 2014 Physics.pdb
+G:\Projects\Project\SET Physics\WindowsApplication1\bin\Debug\SET 2014 Physics.xml
+G:\Projects\Project\SET Physics\WindowsApplication1\obj\Debug\Physics.Form2.resources
+G:\Projects\Project\SET Physics\WindowsApplication1\obj\Debug\Physics.Resources.resources
+G:\Projects\Project\SET Physics\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+G:\Projects\Project\SET Physics\WindowsApplication1\obj\Debug\SET 2014 Physics.exe
+G:\Projects\Project\SET Physics\WindowsApplication1\obj\Debug\SET 2014 Physics.xml
+G:\Projects\Project\SET Physics\WindowsApplication1\obj\Debug\SET 2014 Physics.pdb

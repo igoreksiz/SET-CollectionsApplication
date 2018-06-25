@@ -1,0 +1,2725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Biology.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E56646E-8CC6-4395-860C-5F0B207D6CEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Biology.My.MyApplication</StartupObject>
+    <RootNamespace>Biology</RootNamespace>
+    <AssemblyName>SET 2014 Biology</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SET 2014 Biology.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SET 2014 Biology.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-sidebar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_01_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_01_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_01_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_02_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_02_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_02_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_03_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_03_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_03_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_04_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_04_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_04_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_05_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_05_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_05_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_06_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_06_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_06_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_07_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_07_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_07_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_08_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_08_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_08_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_09_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_09_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_09_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_10_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_10_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_10_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_11_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_11_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_11_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_12_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_12_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_12_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_13_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_13_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_13_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_14_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_14_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_14_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_15_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_15_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_15_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_16_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_16_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_16_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_17_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_17_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_17_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_18_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_18_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_18_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_19_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_19_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_19_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_20_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_20_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_20_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_21_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_21_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_21_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_22_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_22_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_22_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_23_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_23_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_23_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_24_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_24_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_24_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_25_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_25_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_25_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tests_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tests_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalCabinet_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalCabinet_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NU_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NU_BG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NU_BG3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controlbox_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Biology.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT02Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT03Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT04Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT05Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT06Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT07Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT08Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT09Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT10Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT11Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT12Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT13Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT14Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT15Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT16Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT17Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT18Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT19Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT20Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT21Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT22Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT23Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT24Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT25Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BT01Q02.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

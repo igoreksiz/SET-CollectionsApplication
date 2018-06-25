@@ -1,0 +1,2725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Mathematics.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E56646E-8CC6-4395-860C-5F0B207D6CEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Mathematics.My.MyApplication</StartupObject>
+    <RootNamespace>Mathematics</RootNamespace>
+    <AssemblyName>SET 2014 Mathematics</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SET 2014 Mathematics.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SET 2014 Mathematics.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-sidebar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controlbox_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_01_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_01_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_01_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_02_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_02_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_02_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_03_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_03_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_03_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_04_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_04_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_04_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_05_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_05_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_05_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_06_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_06_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_06_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_07_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_07_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_07_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_08_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_08_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_08_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_09_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_09_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_09_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_10_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_10_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_10_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_11_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_11_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_11_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_12_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_12_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_12_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_13_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_13_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_13_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_14_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_14_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_14_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_15_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_15_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_15_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_16_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_16_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_16_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_17_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_17_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_17_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_18_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_18_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_18_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_19_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_19_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_19_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_20_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_20_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_20_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_21_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_21_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_21_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_22_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_22_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_22_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_23_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_23_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_23_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_24_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_24_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_24_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_25_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_25_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test_25_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT03Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT04Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT05Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT06Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT07Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT08Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT09Q30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT10Q30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT11Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT12Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT13Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT14Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT15Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT16Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT17Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT18Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT19Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT20Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT21Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT22Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT23Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT24Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q01.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT25Q30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tests_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tests_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalCabinet_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalCabinet_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NU_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NU_BG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NU_BG3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mathematics.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finish_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT01Q30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q02.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q03.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q04.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q05.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q06.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q07.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q08.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q09.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MT02Q24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

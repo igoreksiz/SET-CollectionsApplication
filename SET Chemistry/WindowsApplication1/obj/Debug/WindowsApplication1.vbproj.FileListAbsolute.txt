@@ -1,0 +1,10 @@
+G:\Projects\Project\SET Chemistry\WindowsApplication1\bin\Debug\SET 2014 Chemistry.exe.config
+G:\Projects\Project\SET Chemistry\WindowsApplication1\bin\Debug\SET 2014 Chemistry.exe
+G:\Projects\Project\SET Chemistry\WindowsApplication1\bin\Debug\SET 2014 Chemistry.pdb
+G:\Projects\Project\SET Chemistry\WindowsApplication1\bin\Debug\SET 2014 Chemistry.xml
+G:\Projects\Project\SET Chemistry\WindowsApplication1\obj\Debug\Chemistry.Form2.resources
+G:\Projects\Project\SET Chemistry\WindowsApplication1\obj\Debug\Chemistry.Resources.resources
+G:\Projects\Project\SET Chemistry\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+G:\Projects\Project\SET Chemistry\WindowsApplication1\obj\Debug\SET 2014 Chemistry.exe
+G:\Projects\Project\SET Chemistry\WindowsApplication1\obj\Debug\SET 2014 Chemistry.xml
+G:\Projects\Project\SET Chemistry\WindowsApplication1\obj\Debug\SET 2014 Chemistry.pdb

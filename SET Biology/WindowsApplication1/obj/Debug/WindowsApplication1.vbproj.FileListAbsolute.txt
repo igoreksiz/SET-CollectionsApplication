@@ -1,0 +1,24 @@
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.exe.config
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.exe
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.pdb
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.xml
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\obj\Debug\Biology.Form2.resources
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\obj\Debug\Biology.Resources.resources
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.exe
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.xml
+G:\Projects\Project - копия\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.pdb
+G:\Projects\Project\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.exe.config
+G:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.exe
+G:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.xml
+G:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.pdb
+G:\Projects\Project\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.exe
+G:\Projects\Project\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.pdb
+G:\Projects\Project\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.xml
+G:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\Biology.Form2.resources
+G:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\Biology.Resources.resources
+G:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Projects\Project\SET Biology\WindowsApplication1\bin\Debug\SET 2014 Biology.exe.config
+E:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.exe
+E:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.xml
+E:\Projects\Project\SET Biology\WindowsApplication1\obj\Debug\SET 2014 Biology.pdb

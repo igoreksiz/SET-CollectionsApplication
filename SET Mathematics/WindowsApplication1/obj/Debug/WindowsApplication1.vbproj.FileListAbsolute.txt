@@ -1,0 +1,18 @@
+G:\Projects\Project\SET Mathematics\WindowsApplication1\bin\Debug\SET 2014 Mathematics.exe.config
+G:\Projects\Project\SET Mathematics\WindowsApplication1\bin\Debug\SET 2014 Mathematics.exe
+G:\Projects\Project\SET Mathematics\WindowsApplication1\bin\Debug\SET 2014 Mathematics.pdb
+G:\Projects\Project\SET Mathematics\WindowsApplication1\bin\Debug\SET 2014 Mathematics.xml
+G:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\Mathematics.Form2.resources
+G:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\Mathematics.Resources.resources
+G:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+G:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.exe
+G:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.xml
+G:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.pdb
+E:\Projects\Project\SET Mathematics\WindowsApplication1\bin\Debug\SET 2014 Mathematics.exe.config
+E:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.exe
+E:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.xml
+E:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.pdb
+D:\Projects\Project\SET Mathematics\WindowsApplication1\bin\Debug\SET 2014 Mathematics.exe.config
+D:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.exe
+D:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.xml
+D:\Projects\Project\SET Mathematics\WindowsApplication1\obj\Debug\SET 2014 Mathematics.pdb

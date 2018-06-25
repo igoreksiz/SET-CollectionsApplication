@@ -1,0 +1,20 @@
+G:\Projects\NEW SET\WindowsApplication1\bin\Release\Mathematics.exe.config
+G:\Projects\NEW SET\WindowsApplication1\bin\Release\Mathematics.exe
+G:\Projects\NEW SET\WindowsApplication1\bin\Release\Mathematics.pdb
+G:\Projects\NEW SET\WindowsApplication1\bin\Release\Mathematics.xml
+G:\Projects\NEW SET\WindowsApplication1\obj\Release\Mathematics.Form2.resources
+G:\Projects\NEW SET\WindowsApplication1\obj\Release\Mathematics.Resources.resources
+G:\Projects\NEW SET\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+G:\Projects\NEW SET\WindowsApplication1\obj\Release\Mathematics.exe
+G:\Projects\NEW SET\WindowsApplication1\obj\Release\Mathematics.xml
+G:\Projects\NEW SET\WindowsApplication1\obj\Release\Mathematics.pdb
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\bin\Release\SET 2014 Mathematics.exe.config
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\bin\Release\SET 2014 Mathematics.exe
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\bin\Release\SET 2014 Mathematics.pdb
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\bin\Release\SET 2014 Mathematics.xml
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\obj\Release\Mathematics.Form2.resources
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\obj\Release\Mathematics.Resources.resources
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\obj\Release\SET 2014 Mathematics.exe
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\obj\Release\SET 2014 Mathematics.xml
+G:\Projects\ProccessCountFixer\SET Mathematics\WindowsApplication1\obj\Release\SET 2014 Mathematics.pdb
